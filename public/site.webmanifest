@@ -1,0 +1,13 @@
+{
+  "name": "Little Lemon - Authentic Mediterranean Cuisine in Chicago",
+  "short_name": "Little Lemon",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}

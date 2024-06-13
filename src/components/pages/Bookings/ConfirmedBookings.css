@@ -1,0 +1,14 @@
+.confirmed-booking{
+    align-self: center;
+    text-align: center;
+}
+.confirmed-booking svg{
+    color: #4d403a;
+}
+.confirmed-booking h2{
+    color: #4d403a;
+}
+.confirmed-booking p{
+    color: #4d403a;
+    background-color: #e8d8c3;
+}
