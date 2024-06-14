@@ -16,10 +16,10 @@ const Hero = () => {
             Download CV
           </Link>
         </div>
-        <img 
+        <img
           className="hero-image"
           src={Me}
-          alt="Me" 
+          alt="Me"
         />
       </div>
     </section>

@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './index.css';
 import { fetchAPI, submitAPI } from '../../../utils/fakeAPI';
 import pages from '../../../utils/pages';
-import BookingForm from './BookingForm';
+import Contact from './Contact';
 
 const updateTimes = (availableTimes, date) => {
   const response = fetchAPI(new Date(date));
@@ -27,8 +27,8 @@ const Bookings = () => {
 
   return (
     <div className="bookings">
-      <h2>Table reservation</h2>
-      <BookingForm 
+      <h2>Contact Me</h2>
+      <Contact 
         availableTimes={availableTimes} 
         dispatchOnDateChange={dispatchOnDateChange} 
         submitData={submitData} 

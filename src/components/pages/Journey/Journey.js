@@ -39,7 +39,7 @@ const Journey = () => {
               <p>
               <a className="journey-link" href="https://www.u-tokyo.ac.jp/en/" target="_blank" rel="noreferrer">Website</a>
               <br></br>
-              <a className="journey-link" href="https://peak.c.u-tokyo.ac.jp/" target="_blank" rel="noreferrer">My Program</a>
+              <a className="journey-link" href="https://peak.c.u-tokyo.ac.jp/courses/es/index.html" target="_blank" rel="noreferrer">My Program</a>
               <br></br>
                 Timeline: 2024-Present
                 <br></br>
