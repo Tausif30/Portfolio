@@ -6,4 +6,5 @@ input{
 }
 textarea{
     padding-top: 10px;
+    outline: none !important;
 }

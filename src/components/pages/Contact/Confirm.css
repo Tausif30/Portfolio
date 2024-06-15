@@ -9,3 +9,8 @@
     color: #4d403a;
     background-color: #e8d8c3;
 }
+.confirmed-booking img{
+    max-width: 75px;
+    align-self: center;
+    margin-bottom: 2px;
+}
