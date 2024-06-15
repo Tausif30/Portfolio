@@ -7,6 +7,50 @@
   margin-right: 10%;
   width:auto;
 }
+
+.AboutMe{
+  margin-top: 0% !important;
+  margin-left: 0% !important;
+  margin-bottom: 0 !important;
+  padding: 1.875rem 0 1.875rem 0 !important;
+  background-color: #6F4E37;
+  color: #D6B389 !important;
+  text-decoration: none !important;
+  text-align: center;
+  width: 100%;
+}
+.buttons{
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+.buttons button{
+  background-color: #6F4E37;
+  color: #D6B389;
+  font-size:x-large;
+  padding: 10px 20px;
+  align-items: center;
+  cursor: pointer;
+  border: 3px solid #D6B389;
+}
+.buttons button:first-child {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-right: 3px solid #D6B389;
+}
+.buttons button:nth-child(2) {
+  border-right: 3px solid #D6B389;
+  border-left: 0px;
+}
+.buttons button:nth-child(3) {
+  border-right: 3px solid #D6B389;
+  border-left: 0px;
+}
+.buttons button:last-child {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-left: 0px;
+}
 .skill-link{
  color: whitesmoke !important;
 }

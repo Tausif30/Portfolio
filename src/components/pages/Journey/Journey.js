@@ -1,10 +1,20 @@
+import React, { useState } from 'react';
 import ut from './assets/ut.png'
 import bit from './assets/bit.jpg'
 import utokyo from './assets/utokyo.jpg'
 import './Journey.css';
 const Journey = () => {
+  const [view, setView] = useState('All');
   return (
       <>
+      <h2 className='AboutMe'>Journey</h2>
+      <div className="buttons">
+          <button className="filter_button" onClick={() => setView('All')}>All</button>
+          <button className="filter_button" onClick={() => setView('Academic')}>Academic</button>
+          <button className="filter_button" onClick={() => setView('Professional')}>Professional</button>
+        </div>
+        {(view === 'All' || view === 'Academic') && (
+          <>
       <div className="menu-header">
       <h2><u>Academics</u></h2>
     </div>
@@ -50,6 +60,10 @@ const Journey = () => {
             </div>
           </article>
         </section>
+        </>
+        )}
+        {(view === 'All' || view === 'Professional') && (
+          <>
         <div className="menu-header">
       <h2><u>Professional</u></h2>
     </div>
@@ -70,6 +84,8 @@ const Journey = () => {
             </div>
           </article>
         </section>
+        </>
+        )}
       </>
   );
 };

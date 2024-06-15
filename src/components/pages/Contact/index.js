@@ -13,7 +13,7 @@ const updateTimes = (availableTimes, date) => {
 const initializeTimes = initialAvailableTimes => 
   [...initialAvailableTimes, ...fetchAPI(new Date())];
 
-const Bookings = () => {
+const Contacts = () => {
   const [
     availableTimes, 
     dispatchOnDateChange
@@ -22,7 +22,7 @@ const Bookings = () => {
 
   const submitData = formData => {
     const response = submitAPI(formData);
-    if (response) navigate(pages.get('confirmedBooking').path);
+    if (response) navigate(pages.get('confirmation').path);
   }; 
 
   return (
@@ -37,4 +37,4 @@ const Bookings = () => {
   );
 };
 
-export default Bookings;
+export default Contacts;
