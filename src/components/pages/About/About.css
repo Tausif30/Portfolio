@@ -33,6 +33,10 @@
   cursor: pointer;
   border: 3px solid #D6B389;
 }
+.buttons button:hover, .buttons button.active{
+  background-color: #D6B389;
+  color: #6F4E37;
+}
 .buttons button:first-child {
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;

@@ -32,6 +32,11 @@ nav{
   transition: background-color 0.5s;
 }
 
+.nav-bar-hamburger img{
+  max-width: 35px;
+  background-color: #6F4E37 !important;
+}
+
 .nav-bar-hamburger:hover {
   background-color: #6F4E37;
 }
@@ -57,6 +62,10 @@ nav{
 .nav-bar-links li {
   display: flex;
   background-color: #6F4E37;
+}
+.nav-bar-links li a.active{
+  background-color: #D6B389;
+  color: #6F4E37;
 }
 
 .nav-bar-links a {

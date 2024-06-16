@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { useLocation, Link } from 'react-router-dom';
-import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import bars from './assets/bars.svg'
+import cross from './assets/cross.svg'
 import logoImage from './assets/logo.png';
 import './Header.css';
 import pages from '../../utils/pages';
@@ -47,16 +47,18 @@ const { pathname } = useLocation();
     <header>
       <nav className="container grid nav-bar">
         <Link className="nav-bar-logo" to={pages.get('home').path}>
-          <img src={logoImage} alt="Little Lemon logo" />
+          <img src={logoImage} alt="Tausif Ibne Iqbal Logo" />
         </Link>
         <button
           className="nav-bar-hamburger"
           type="button"
           onClick={() => setIsNavExpanded(!isNavExpanded)}
         >
-          {isNavExpanded ?
-            <FontAwesomeIcon icon={faXmark} size="2x"/> : 
-            <FontAwesomeIcon icon={faBars} size="2x"/>}
+          {isNavExpanded ? (
+          <img src={cross} alt="Close menu" width="32" height="32" />
+        ) : (
+          <img src={bars} alt="Open menu" width="32" height="32" />
+        )}
         </button>
         <ul
           className={isNavExpanded ? 'nav-bar-links expanded' : 'nav-bar-links'} 
@@ -65,7 +67,7 @@ const { pathname } = useLocation();
           {navLinks.map((navLink, index) =>
             <li key={index}>
               <Link
-                className={pathname === navLink.path ? 'current-location' : ''} 
+                className={pathname === navLink.path ? 'active' : ''} 
                 to={navLink.path}
               >
                 {navLink.name}

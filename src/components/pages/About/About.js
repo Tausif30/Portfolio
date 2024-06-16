@@ -21,10 +21,10 @@ const About = () => {
     <>
       <h2 className='AboutMe'>About Me</h2>
       <div className="buttons">
-          <button className="filter_button" onClick={() => setView('All')}>All</button>
-          <button className="filter_button" onClick={() => setView('Hobbies')}>Hobbies</button>
-          <button className="filter_button" onClick={() => setView('Skills')}>Skills</button>
-          <button className="filter_button" onClick={() => setView('Achievements')}>Achievements</button>
+          <button className={view === 'All' ? 'active' : ''} onClick={() => setView('All')}>All</button>
+          <button className={view === 'Hobbies' ? 'active' : ''} onClick={() => setView('Hobbies')}>Hobbies</button>
+          <button className={view === 'Skills' ? 'active' : ''} onClick={() => setView('Skills')}>Skills</button>
+          <button className={view === 'Achievements' ? 'active' : ''} onClick={() => setView('Achievements')}>Achievements</button>
         </div>
       <div className="menu-header">
       </div>

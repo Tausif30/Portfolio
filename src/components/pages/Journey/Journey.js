@@ -9,9 +9,9 @@ const Journey = () => {
       <>
       <h2 className='AboutMe'>Journey</h2>
       <div className="buttons">
-          <button className="filter_button" onClick={() => setView('All')}>All</button>
-          <button className="filter_button" onClick={() => setView('Academic')}>Academic</button>
-          <button className="filter_button" onClick={() => setView('Professional')}>Professional</button>
+          <button className={view === 'All' ? 'active' : ''} onClick={() => setView('All')}>All</button>
+          <button className={view === 'Academic' ? 'active' : ''} onClick={() => setView('Academic')}>Academic</button>
+          <button className={view === 'Professional' ? 'active' : ''} onClick={() => setView('Professional')}>Professional</button>
         </div>
         {(view === 'All' || view === 'Academic') && (
           <>
