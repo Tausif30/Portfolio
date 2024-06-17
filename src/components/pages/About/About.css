@@ -239,6 +239,6 @@ p{
     grid-row: 6;
   }
   .buttons button{
-    font-size: medium;
+    font-size: small;
   }
 }
