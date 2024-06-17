@@ -215,7 +215,7 @@ const About = () => {
                 <p>
                   Completed Harvard CS50, Class of 2024.
                   <br />
-                  <a href='https://www.youtube.com/watch?v=HLfPdW0gG5s' target="_blank" rel="noreferrer">Final Project</a>
+                  <a href='https://www.youtube.com/watch?v=HLfPdW0gG5s' target="_blank" rel="noreferrer">🔗 Final Project</a>
                 </p>
               </div>
             </article>

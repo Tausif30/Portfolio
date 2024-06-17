@@ -28,9 +28,9 @@ const Journey = () => {
             </div>
             <div className="Journey-card-body-footer">
               <p>
-              <a className="journey-link" href="https://www.facebook.com/bitschoolofficialpage" target="_blank" rel="noreferrer">Facebook</a>
+              <a className="journey-link" href="https://www.facebook.com/bitschoolofficialpage" target="_blank" rel="noreferrer">🔗 Facebook</a>
                 <br></br>
-                <a className="journey-link" href="https://www.instagram.com/bit_b23/" target="_blank" rel="noreferrer">My Yearbook</a>
+                <a className="journey-link" href="https://www.instagram.com/bit_b23/" target="_blank" rel="noreferrer">🔗 My Yearbook</a>
                 <br></br>
                 Timeline: 2009-2023
                 <br></br>
@@ -47,9 +47,9 @@ const Journey = () => {
             </div>
             <div className="Journey-card-body-footer">
               <p>
-              <a className="journey-link" href="https://www.u-tokyo.ac.jp/en/" target="_blank" rel="noreferrer">Website</a>
+              <a className="journey-link" href="https://www.u-tokyo.ac.jp/en/" target="_blank" rel="noreferrer">🔗 Website</a>
               <br></br>
-              <a className="journey-link" href="https://peak.c.u-tokyo.ac.jp/courses/es/index.html" target="_blank" rel="noreferrer">My Program</a>
+              <a className="journey-link" href="https://peak.c.u-tokyo.ac.jp/courses/es/index.html" target="_blank" rel="noreferrer">🔗 My Program</a>
               <br></br>
                 Timeline: 2024-Present
                 <br></br>
