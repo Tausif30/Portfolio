@@ -1,7 +1,6 @@
-import { Link } from 'react-router-dom';
 import Me from './assets/Me.jpg'
 import './Hero.css';
-import pages from '../../../utils/pages';
+import pdf from './assets/resume.pdf'
 
 const Hero = () => {
   return (
@@ -12,9 +11,9 @@ const Hero = () => {
           <p>
             On a journey to becoming a better me and change the world.
           </p>
-          <Link className="button-primary" to={pages.get('bookings').path}>
+          <a className="button-primary" href={pdf} download="resume.pdf">
             Download CV
-          </Link>
+          </a>
         </div>
         <img
           className="hero-image"
