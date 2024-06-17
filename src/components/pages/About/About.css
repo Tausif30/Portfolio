@@ -238,4 +238,7 @@ p{
     grid-column: 1;
     grid-row: 6;
   }
+  .buttons button{
+    font-size: medium;
+  }
 }
