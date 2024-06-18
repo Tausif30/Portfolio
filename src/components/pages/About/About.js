@@ -228,7 +228,7 @@ const About = () => {
               </div>
               <div className="skill-card-body-footer">
                 <p>
-                  Brown Belt in Gojo-Ryu Karate.
+                  Brown Belt (1st Kyu) in Gojo-Ryu Karate.
                 </p>
               </div>
             </article>

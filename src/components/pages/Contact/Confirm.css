@@ -8,6 +8,7 @@
 .confirmed-booking p{
     color: #6F4E37;
     background-color: #e8d8c3;
+    font-size: x-large;
 }
 .confirmed-booking img{
     max-width: 75px;

@@ -15,7 +15,11 @@
   color: whitesmoke;
   border-radius: 25px;
 }
-
+.our-story-description p span{
+  background-color: #6F4E37;
+  color: #D6B389;
+  font-size: xx-large;
+}
 /*-- Media queries ------------------------------------------------------*/
 @media only screen and (max-width: 692px) {
   .our-story{
