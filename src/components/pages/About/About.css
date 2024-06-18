@@ -241,4 +241,7 @@ p{
   .buttons button{
     font-size: small;
   }
+  .buttons{
+    margin-bottom: 3rem;
+  }
 }
