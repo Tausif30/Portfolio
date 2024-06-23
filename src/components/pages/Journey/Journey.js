@@ -34,7 +34,7 @@ const Journey = () => {
                 <br></br>
                 Timeline: 2009-2023
                 <br></br>
-                Study Level: Highschool Graduate (Valedictorian)
+                Study Level: High School Graduate (Valedictorian)
               </p>
             </div>
           </article>
@@ -73,13 +73,15 @@ const Journey = () => {
               <img src={ut} alt="UT" />
             </div>
             <div className="Journey-card-header">
-              <h3>Uttara Tutorials - Teaching Assisstant</h3>
+              <h3>Uttara Tutorials</h3>
             </div>
             <div className="Journey-card-body-footer">
               <p>
+              Role: Teaching Assisstant
+              <br></br>
               Timeline: 03/2024 - Present
               <br></br>
-              Role: Make Questions for students and work as invigilator.
+              Work: Make Questions for students and work as invigilator.
               </p>
             </div>
           </article>

@@ -2,6 +2,7 @@ import {
   faFacebook,
   faTwitter,
   faInstagram,
+  faGithub
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
@@ -37,16 +38,27 @@ const Footer = () => {
         </nav>
         <div className="site-footer-social">
           <h4>Connect with me</h4>
-          {socials.map((social, index) => 
-            <a 
-              key={index} 
-              href={`https://www.${social.name}.com/tausif.30`} 
-              target="_blank" 
-              rel="noreferrer" 
-            >
-              <FontAwesomeIcon icon={social.icon} size="lg" />
-            </a>
-          )}
+          <a 
+            href="https://www.facebook.com/tausif.30"
+            target="_blank"
+            rel="noreferrer" 
+          >
+            <FontAwesomeIcon icon={faFacebook} size="lg" />
+          </a>
+          <a 
+            href="https://www.instagram.com/tausif.30"
+            target="_blank"
+            rel="noreferrer" 
+          >
+            <FontAwesomeIcon icon={faInstagram} size="lg" />
+          </a>
+          <a 
+            href="https://www.github.com/Tausif30"
+            target="_blank"
+            rel="noreferrer" 
+          >
+            <FontAwesomeIcon icon={faGithub} size="lg" />
+          </a>
         </div>
       </div>
     </footer>

@@ -138,11 +138,17 @@ const About = () => {
               </div>
               <div className="skill-card-body-footer">
                 <p>
-                  Computer expert. Good with all office tools. Can do photo editing and video editing.
-                  Frontend Web Developer.
+                  Can use all office tools.
+                  <br></br>
+                  Frontend Web Developer
+                  <br></br>
+                  Knows Python, C++ & Javascript.
+                  <br></br>
+                  Self-taught Photoeditor & Videoeditor.
+                  <br></br>
                   Can use SQL and manage databases.
-                  Good in programming. I know python, C#, Javascript.
-                  I also know how to use Linux and Bash Programming to a certain level.
+                  <br></br>
+                  Can use Linux knows Bash.
                 </p>
               </div>
             </article>
