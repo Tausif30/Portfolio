@@ -21,6 +21,11 @@
   font-size: xx-large;
 }
 /*-- Media queries ------------------------------------------------------*/
+@media only screen and (max-width: 993px) {
+  .our-story{
+    width: 65%;
+  }
+}
 @media only screen and (max-width: 692px) {
   .our-story{
     width: 80%;

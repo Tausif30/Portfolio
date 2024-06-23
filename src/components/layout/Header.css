@@ -99,6 +99,7 @@ nav{
     display: inline-block;
     background: none;
     border: none;
+    margin-right: 1rem;
   }
 
   .nav-bar-links {
