@@ -31,16 +31,7 @@ const Header = () => {
       window.removeEventListener('scroll', handleScroll)
     }
   },[]);
-  const handleClick = (anchor) => () => {
-    const id = `${anchor}-section`;
-    const element = document.getElementById(id);
-    if(element){
-      element.scrollIntoView({
-        behaviour: "smooth",
-        block: "start",
-      })
-    }
-  }
+
 const { pathname } = useLocation();
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   return (
@@ -61,13 +52,13 @@ const { pathname } = useLocation();
         )}
         </button>
         <ul
-          className={isNavExpanded ? 'nav-bar-links expanded' : 'nav-bar-links'} 
+          className={isNavExpanded ? 'nav-bar-links expanded' : 'nav-bar-links'}
           onClick={() => setIsNavExpanded(!isNavExpanded)}
         >
           {navLinks.map((navLink, index) =>
             <li key={index}>
               <Link
-                className={pathname === navLink.path ? 'active' : ''} 
+                className={pathname === navLink.path ? 'active' : ''}
                 to={navLink.path}
               >
                 {navLink.name}

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import baklava from './assets/baklava.jpg';
 import travel from "./assets/Travel.jpg";
-import cs50 from "./assets/cs50.png";
 import arduino from "./assets/Arduino.png";
 import anime from "./assets/Anime.jpg";
 import bdpho from "./assets/Olympiad.jpg";
@@ -26,11 +25,11 @@ const About = () => {
           <button className={view === 'Skills' ? 'active' : ''} onClick={() => setView('Skills')}>Skills</button>
           <button className={view === 'Achievements' ? 'active' : ''} onClick={() => setView('Achievements')}>Achievements</button>
         </div>
-      <div className="menu-header">
+      <div className="skill-header">
       </div>
       {(view === 'All' || view === 'Hobbies') && (
         <>
-          <div className="menu-header">
+          <div className="skill-header">
             <h2>Hobbies</h2>
           </div>
           <section className="hobby">
@@ -110,7 +109,7 @@ const About = () => {
       )}
       {(view === 'All' || view === 'Skills') && (
         <>
-          <div className="menu-header">
+          <div className="skill-header">
             <h2>Skills</h2>
           </div>
           <section className="skill">
@@ -188,7 +187,7 @@ const About = () => {
       )}
       {(view === 'All' || view === 'Achievements') && (
         <>
-          <div className="menu-header">
+          <div className="skill-header">
             <h2>Achievements</h2>
           </div>
           <section className="achievement">
@@ -202,26 +201,11 @@ const About = () => {
               <div className="skill-card-body-footer">
                 <p>
                   2019: Ranked Nationally in Bangladesh Physics Olympiad
-                  and Regionally Bangladesh Mathematics Olympiad.
+                  and Regionally in Bangladesh Mathematics Olympiad.
                   <br />
                   2020: Ranked 3rd Nationally in English Medium Mathematics Olympiad.
                   <br />
-                  2023: Ranked Regionally Bangladesh Physics Olympiad.
-                </p>
-              </div>
-            </article>
-            <article className="skill-card">
-              <div className="skill-card-image">
-                <img src={cs50} alt="Harvard CS50" />
-              </div>
-              <div className="skill-card-header">
-                <h3>CS50</h3>
-              </div>
-              <div className="skill-card-body-footer">
-                <p>
-                  Completed Harvard CS50, Class of 2024.
-                  <br />
-                  <a href='https://www.youtube.com/watch?v=HLfPdW0gG5s' target="_blank" rel="noreferrer">🔗 Final Project</a>
+                  2023: Ranked Regionally in Bangladesh Physics Olympiad.
                 </p>
               </div>
             </article>

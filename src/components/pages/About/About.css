@@ -85,7 +85,7 @@ h2{
   grid-column: 3;
   grid-row: 2;
 }
-.menu-header h2{
+.skill-header h2{
   line-height: 1;
   font-family: "Markazi Text";
   font-weight: bold;
@@ -96,7 +96,7 @@ h2{
 .skill-card-header h3{
   color: #D6B389;
 }
-.menu-header {
+.skill-header {
   margin-top: 3%;
   margin-left: 12%;
   grid-column: 1 / -1;
@@ -211,7 +211,7 @@ p{
     grid-template-columns: 1fr;
   }
 
-  .menu-header {
+  .skill-header {
     grid-column: auto;
   }
   .skill-card:nth-child(1){
