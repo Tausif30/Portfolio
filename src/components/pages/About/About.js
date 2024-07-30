@@ -122,8 +122,7 @@ const About = () => {
               </div>
               <div className="skill-card-body-footer">
                 <p>
-                  I often build small electronic projects using devices most commonly with arduino.
-                  I do by programming the board and assembling the circuits.
+                  I have a hobby of building small electronic projects using electronic boards most commonly with arduino.
                   My most significant builds include a quadcopter and gesture-controlled car.
                 </p>
               </div>
@@ -141,11 +140,11 @@ const About = () => {
                   <br></br>
                   Frontend Web Developer
                   <br></br>
-                  Knows Python, C++ & Javascript.
+                  Knows Python, C# & Javascript.
                   <br></br>
                   Self-taught Photoeditor & Videoeditor.
                   <br></br>
-                  Can use SQL and manage databases.
+                  Can use SQL.
                   <br></br>
                   Can use Linux knows Bash.
                 </p>
