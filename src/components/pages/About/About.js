@@ -86,8 +86,7 @@ const About = () => {
               </div>
               <div className="skill-card-body-footer">
                 <p>
-                  A foodie. Love to eat and cook at the same time. When cooking I usually experiment all the time
-                  and try to make my existing dishes better.
+                  A foodie. Love to eat and cook. Like to experiment in cooking.
                 </p>
               </div>
             </article>

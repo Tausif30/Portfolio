@@ -59,7 +59,7 @@ const Journey = () => {
                 Course: CS50x
                 <br></br>
                 Description: A 3 month course covering topics
-                from C, Python, SQL, Web Development, AI, Cybersecurity.
+                from C, Python, SQL, Web Development, AI & Cybersecurity.
               </p>
             </div>
           </article>
@@ -104,7 +104,7 @@ const Journey = () => {
               <br></br>
               Timeline: 03/2024 - 06/2024
               <br></br>
-              Role: Make Questions for students, invigilating during exams and checking the scripts.
+              Work: Make Questions for students, invigilating during exams and checking the scripts.
               </p>
             </div>
           </article>
