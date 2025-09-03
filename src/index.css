@@ -1,3 +1,4 @@
+/* ===== GLOBAL RESET ===== */
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +6,7 @@
   scroll-behavior: smooth;
 }
 
+/* ===== BODY STYLING ===== */
 body {
   font-family: Karla, sans-serif;
   font-size: 1rem;
@@ -14,12 +16,14 @@ body {
   color: #D6B389;
 }
 
+/* ===== TYPOGRAPHY ===== */
 a {
   text-decoration: none;
   color: #6F4E37;
 }
 
-h1, h2 {
+h1,
+h2 {
   line-height: 1;
   font-family: "Markazi Text";
   font-weight: normal;
@@ -33,6 +37,7 @@ h2 {
   font-size: 2.5rem;
 }
 
+/* ===== FORM ELEMENTS ===== */
 form {
   max-width: 28.125rem;
   padding: 3rem 2rem;
@@ -43,9 +48,13 @@ form {
 
 label {
   cursor: pointer;
+  font-weight: bold;
+  color: #6F4E37;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
   height: 2.5rem;
   padding-inline-end: 1rem;
   padding-inline-start: 1rem;
@@ -55,19 +64,17 @@ input, select, textarea {
   background: whitesmoke;
   color: #6F4E37;
   cursor: pointer;
-  transition: border-color 0.3s;
+  transition: border-color 0.3s ease;
 }
 
-input:focus, select:focus, textarea:focus {
+input:focus,
+select:focus,
+textarea:focus {
   border-width: 0.125rem;
   border-color: #6F4E37;
 }
 
-label {
-  font-weight: bold;
-  color: #6F4E37;
-}
-
+/* ===== BUTTONS AND LAYOUT ===== */
 button {
   border: none;
   cursor: pointer;
@@ -81,6 +88,7 @@ main > section {
   margin-bottom: 5rem;
 }
 
+/* ===== UTILITY CLASSES ===== */
 .container {
   max-width: 61.625rem;
   width: 90%;
@@ -99,10 +107,10 @@ main > section {
   color: #6F4E37;
   font-weight: bold;
   border: 0.1875rem solid #D6B389;
-  transition: background, border, color 0.5s;
+  transition: background-color 0.5s ease, border-color 0.5s ease, color 0.5s ease;
 }
 
-.button-primary:hover, 
+.button-primary:hover,
 .button-primary:focus {
   background-color: #6F4E37;
   border-color: #6F4E37;

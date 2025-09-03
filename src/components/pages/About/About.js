@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
-import baklava from './assets/baklava.jpg';
-import travel from "./assets/Travel.jpg";
-import arduino from "./assets/Arduino.png";
-import anime from "./assets/Anime.jpg";
-import bdpho from "./assets/Olympiad.jpg";
-import science from "./assets/Science.jpg";
-import tech from "./assets/Tech.png";
-import language from "./assets/Language.jpg";
-import karate from "./assets/karate.jpg";
-import workout from "./assets/workout.jpg";
-import doe from "./assets/dofe.jpg";
-import ocw from "./assets/MIT_OCW.jpg";
+import food from './assets/Food.jpg';
+import travel from './assets/Okutama.jpg';
+import arduino from './assets/Arduino.png';
+import anime from './assets/Anime.jpg';
+import bdpho from './assets/Olympiad.jpg';
+import science from './assets/Science.jpg';
+import tech from './assets/Tech.png';
+import language from './assets/Language.jpg';
+import karate from './assets/karate.jpg';
+import workout from './assets/workout.jpg';
+import doe from './assets/dofe.jpg';
+import ocw from './assets/MIT_OCW.jpg';
 import './About.css';
 
 const About = () => {
@@ -18,13 +18,33 @@ const About = () => {
 
   return (
     <>
-      <h2 className='AboutMe'>About Me</h2>
+      <h2 className="AboutMe">About Me</h2>
       <div className="buttons">
-          <button className={view === 'All' ? 'active' : ''} onClick={() => setView('All')}>All</button>
-          <button className={view === 'Hobbies' ? 'active' : ''} onClick={() => setView('Hobbies')}>Hobbies</button>
-          <button className={view === 'Skills' ? 'active' : ''} onClick={() => setView('Skills')}>Skills</button>
-          <button className={view === 'Achievements' ? 'active' : ''} onClick={() => setView('Achievements')}>Achievements</button>
-        </div>
+        <button 
+          className={view === 'All' ? 'active' : ''} 
+          onClick={() => setView('All')}
+        >
+          All
+        </button>
+        <button 
+          className={view === 'Hobbies' ? 'active' : ''} 
+          onClick={() => setView('Hobbies')}
+        >
+          Hobbies
+        </button>
+        <button 
+          className={view === 'Skills' ? 'active' : ''} 
+          onClick={() => setView('Skills')}
+        >
+          Skills
+        </button>
+        <button 
+          className={view === 'Achievements' ? 'active' : ''} 
+          onClick={() => setView('Achievements')}
+        >
+          Achievements
+        </button>
+      </div>
       <div className="skill-header">
       </div>
       {(view === 'All' || view === 'Hobbies') && (
@@ -42,7 +62,7 @@ const About = () => {
               </div>
               <div className="skill-card-body-footer">
                 <p>
-                  Love to travel and learn about new cultures, visit new places and learn about the people.
+                  I love to travel and learn about new cultures, visit new places and learn about the people.
                 </p>
               </div>
             </article>
@@ -79,14 +99,16 @@ const About = () => {
             </article>
             <article className="skill-card">
               <div className="skill-card-image">
-                <img src={baklava} alt="Baklava" />
+                <img src={food} alt="food" />
               </div>
               <div className="skill-card-header">
-                <h3>Eating & cooking</h3>
+                <h3>Foodie</h3>
               </div>
               <div className="skill-card-body-footer">
                 <p>
-                  A foodie. Love to eat and cook. Like to experiment in cooking.
+                 I love to cook and eat new tasty foods.
+                 I can cook South Asian, Italian and bit of Japanese Cuisines.
+                 I love to experiment and make new dishes.
                 </p>
               </div>
             </article>
@@ -99,7 +121,7 @@ const About = () => {
               </div>
               <div className="skill-card-body-footer">
                 <p>
-                  Like to workout and maintain a healthy body.
+                  I like to do gym and maintain a healthy body.
                 </p>
               </div>
             </article>
@@ -135,17 +157,10 @@ const About = () => {
               </div>
               <div className="skill-card-body-footer">
                 <p>
-                  Can use all office tools.
-                  <br></br>
-                  Frontend Web Developer
-                  <br></br>
-                  Knows Python, C# & Javascript.
-                  <br></br>
-                  Self-taught Photoeditor & Videoeditor.
-                  <br></br>
-                  Can use SQL.
-                  <br></br>
-                  Can use Linux knows Bash.
+                  I can use all Microsoft Office tools and also a self-taught
+                  photoeditor and videoeditor. I can use Python, C#, SQL, JavaScript,
+                  and a bit of Machine Learning. I can use RStudio, MATLAB Simulink, and
+                  Linux (Bash).
                 </p>
               </div>
             </article>
@@ -162,7 +177,7 @@ const About = () => {
                   <br />
                   Can speak Hindi & Urdu.
                   <br />
-                  Partially knows Japanese and French.
+                  Conversational Level Japanese.
                 </p>
               </div>
             </article>
@@ -175,8 +190,8 @@ const About = () => {
               </div>
               <div className="skill-card-body-footer">
                 <p>
-                  Love to learn new things and hone my existing skills through online, reading books and experimentation.
-                  Passionate about problem solving.
+                  I love to learn new things and hone my existing skills through online courses, reading books, and experimentation.
+                  I am passionate about problem solving.
                 </p>
               </div>
             </article>

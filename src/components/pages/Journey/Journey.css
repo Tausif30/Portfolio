@@ -1,31 +1,47 @@
-.academics, .professional{
+/* ===== LAYOUT CONTAINERS ===== */
+.academics,
+.professional {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-row: auto;
   gap: 1.25rem;
   margin-left: 10%;
   margin-right: 10%;
-  width:auto;
-}
-.journey-link{
- color: whitesmoke !important;
-}
-h2{
-  margin-bottom: 20px;
+  width: auto;
 }
 
-.Journey-card:nth-child(1){
+/* ===== TYPOGRAPHY ===== */
+h2 {
+  margin-bottom: 1.25rem;
+}
+
+.journey-link {
+  color: whitesmoke !important;
+}
+
+/* ===== GRID POSITIONING ===== */
+.Journey-card:nth-child(1) {
   grid-column: 1;
   grid-row: 1;
 }
-.Journey-card:nth-child(2){
+
+.Journey-card:nth-child(2) {
   grid-column: 2;
   grid-row: 1;
 }
-.Journey-card:nth-child(3){
+
+.Journey-card:nth-child(3) {
   grid-column: 3;
   grid-row: 1;
 }
+
+/* ===== HEADER STYLING ===== */
+.Journey-header {
+  margin-top: 3%;
+  margin-left: 12%;
+  grid-column: 1 / -1;
+}
+
 .Journey-header h2 u {
   line-height: 1;
   font-family: "Markazi Text";
@@ -33,17 +49,16 @@ h2{
   font-size: 2.5rem;
   color: #6F4E37;
 }
-.Journey-card-header h3{
+
+.Journey-card-header h3 {
   color: #D6B389;
 }
-.Journey-header {
-  margin-top: 3%;
-  margin-left: 12%;
-  grid-column: 1 / -1;
-}
-*{
+
+/* ===== GLOBAL STYLES ===== */
+* {
   color: whitesmoke;
 }
+/* ===== CARD STYLING ===== */
 .Journey-card {
   grid-column: auto;
   grid-row: 2;
@@ -55,14 +70,18 @@ h2{
   border-radius: 1rem;
   overflow: hidden;
   background-color: #6F4E37;
+  transition: transform 0.3s ease;
 }
 
 .Journey-card:hover .Journey-card-image img {
   transform: scale(1.1);
 }
-img{
+
+/* ===== IMAGE STYLING ===== */
+img {
   margin-bottom: -2%;
 }
+
 .Journey-card-image img {
   width: 100%;
   height: 12.5rem;
@@ -70,6 +89,7 @@ img{
   transition: all ease-in-out 0.3s;
 }
 
+/* ===== CARD CONTENT STYLING ===== */
 .Journey-card-header,
 .Journey-card-body-footer {
   padding-top: 1.25rem;
@@ -90,9 +110,10 @@ img{
   background-color: #6F4E37;
 }
 
-p{
-    background-color: #6F4E37;
+p {
+  background-color: #6F4E37;
 }
+
 .Journey-card-body-footer {
   display: flex;
   flex-direction: column;
@@ -112,50 +133,61 @@ p{
   background-color: #6F4E37;
 }
 
-/*-- Media queries ------------------------------------------------------*/
+/* ===== MEDIA QUERIES ===== */
 
+/* Tablet Layout (2 columns) */
 @media (max-width: 960px) {
-.Journey-card {
-  grid-row: auto;
-}
-}
-@media (max-width: 960px) {
-  .academics, .professional {
+  .academics,
+  .professional {
     grid-template-columns: repeat(2, 1fr);
   }
-  .Journey-card:nth-child(1){
+
+  .Journey-card {
+    grid-row: auto;
+  }
+
+  .Journey-card:nth-child(1) {
     grid-column: 1;
     grid-row: 1;
   }
-  .Journey-card:nth-child(2){
+
+  .Journey-card:nth-child(2) {
     grid-column: 2;
     grid-row: 1;
   }
-  .Journey-card:nth-child(3){
+
+  .Journey-card:nth-child(3) {
     grid-column: 1;
     grid-row: 2;
   }
 }
 
+/* Mobile Layout (1 column) */
 @media (max-width: 692px) {
-  .academics, .professional {
+  .academics,
+  .professional {
     grid-template-columns: 1fr;
   }
-  .Journey-header h2 u{
+
+  .Journey-header h2 u {
     font-size: 2rem;
   }
+
   .Journey-header {
     grid-column: auto;
   }
-  .Journey-card:nth-child(1){
+
+  .Journey-card:nth-child(1) {
     grid-column: 1;
     grid-row: 1;
   }
-  .Journey-card:nth-child(2){
+
+  .Journey-card:nth-child(2) {
     grid-column: 1;
     grid-row: 2;
   }
-  .Journey-card:nth-child(3){
+
+  .Journey-card:nth-child(3) {
     grid-column: 1;
     grid-row: 3;
   }

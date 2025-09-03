@@ -10,6 +10,7 @@ import Confirm from './components/pages/Contact/Confirm';
 import NotFound from './components/pages/NotFound';
 import About from './components/pages/About/About';
 import Journey from './components/pages/Journey/Journey'
+import Projects from './components/pages/Projects/Projects';
 const App = () => {
   return (
     <>
@@ -20,6 +21,7 @@ const App = () => {
           <Route path={pages.get('journey').path} element={<Journey />}/>
           <Route path={pages.get('bookings').path} element={<Contact />} />
           <Route path={pages.get('confirmedBooking').path} element={<Confirm />}/>
+          <Route path={pages.get('projects').path} element={<Projects />}/>
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>

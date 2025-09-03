@@ -1,14 +1,17 @@
-nav{
+/* ===== NAVIGATION CONTAINER ===== */
+nav {
   min-width: 100%;
   background-color: #6F4E37;
-  border-bottom: #D6B389 solid 5px;
+  border-bottom: 0.3125rem solid #D6B389;
 }
+
 .nav-bar {
   grid-template-columns: auto auto auto;
   min-height: 6.25rem;
   background-color: #6F4E37;
 }
 
+/* ===== LOGO STYLING ===== */
 .nav-bar-logo {
   grid-column: 1;
   justify-self: start;
@@ -19,21 +22,22 @@ nav{
 
 .nav-bar-logo img {
   padding-top: 0.25rem;
-  max-width: 5rem;
-  background-color: #6F4E37;
   padding-bottom: 0.5rem;
   margin-left: 5rem;
+  max-width: 5rem;
+  background-color: #6F4E37;
 }
 
+/* ===== HAMBURGER MENU ===== */
 .nav-bar-hamburger {
   grid-column: 2;
   display: none;
   cursor: pointer;
-  transition: background-color 0.5s;
+  transition: background-color 0.5s ease;
 }
 
-.nav-bar-hamburger img{
-  max-width: 35px;
+.nav-bar-hamburger img {
+  max-width: 2.1875rem;
   background-color: #6F4E37 !important;
 }
 
@@ -41,6 +45,7 @@ nav{
   background-color: #6F4E37;
 }
 
+/* ===== NAVIGATION LINKS ===== */
 .nav-bar-links {
   grid-column: 3;
   display: flex;
@@ -48,10 +53,10 @@ nav{
   margin-block-start: 0;
   margin-block-end: 0;
   padding-inline-start: 0;
-  list-style-type: none;
-  transition: left 0.3s;
-  background-color: #6F4E37;
   padding-right: 4rem;
+  list-style-type: none;
+  transition: left 0.3s ease;
+  background-color: #6F4E37;
 }
 
 .nav-bar-links.expanded {
@@ -63,7 +68,8 @@ nav{
   display: flex;
   background-color: #6F4E37;
 }
-.nav-bar-links li a.active{
+
+.nav-bar-links li a.active {
   background-color: #D6B389;
   color: #6F4E37;
 }
@@ -71,23 +77,23 @@ nav{
 .nav-bar-links a {
   display: flex;
   align-items: center;
-  padding-top: 1.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 1.5rem;
+  padding: 1.5rem 1rem;
   text-transform: uppercase;
-  transition: background-color 0.5s;
+  transition: background-color 0.5s ease;
   background-color: #6F4E37;
   color: #D6B389;
 }
 
-.current-location, 
-.nav-bar-links a:hover, 
+.current-location,
+.nav-bar-links a:hover,
 .nav-bar-links a:focus {
   background-color: #D6B389;
   color: #6F4E37;
 }
 
+/* ===== MEDIA QUERIES ===== */
+
+/* Tablet and Mobile Navigation */
 @media only screen and (max-width: 992px) {
   .nav-bar {
     grid-template-columns: auto auto;
@@ -110,18 +116,21 @@ nav{
     top: 0;
     left: -50%;
     background-color: #6F4E37;
-    box-shadow: 2px 0px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0.125rem 0 0.25rem 0 rgba(0, 0, 0, 0.2);
     z-index: 100;
   }
 
   .nav-bar-links li {
     flex-direction: column;
   }
-  .nav-bar-links.expanded{
-    padding-right: 0%;
+
+  .nav-bar-links.expanded {
+    padding-right: 0;
     width: 15rem;
   }
 }
+
+/* Mobile Logo Adjustment */
 @media only screen and (max-width: 692px) {
   .nav-bar-logo img {
     margin-left: 2rem;

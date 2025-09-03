@@ -1,0 +1,113 @@
+/* ===== PROJECTS SECTION ===== */
+.ProjectsMe {
+  margin-top: 0% !important;
+  margin-left: 0% !important;
+  margin-bottom: 0 !important;
+  padding: 1.875rem 0 1.875rem 0 !important;
+  background-color: #6F4E37;
+  color: #D6B389 !important;
+  text-decoration: none !important;
+  text-align: center;
+  width: 100%;
+}
+
+/* ===== LAYOUT CONTAINERS ===== */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row: auto;
+  gap: 1.25rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 12vh;
+  width: auto;
+}
+
+/* ===== CARD STYLING ===== */
+.project-card {
+  grid-column: auto;
+  grid-row: auto;
+  min-height: auto;
+  min-width: fit-content;
+  padding-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: #6F4E37;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-card-image img {
+  transform: scale(1.1);
+}
+
+/* ===== IMAGE STYLING ===== */
+.project-card-image img {
+  width: 100%;
+  height: 12.5rem;
+  object-fit: cover;
+  transition: all ease-in-out 0.3s;
+}
+
+/* ===== CARD CONTENT STYLING ===== */
+.project-card-header,
+.project-card-body-footer {
+  padding-top: 1.25rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  background-color: #6F4E37;
+}
+
+.project-card-header {
+  display: flex;
+  gap: 1.25rem;
+  justify-content: space-between;
+  margin-bottom: 1.875rem;
+}
+
+.project-card-header h3 {
+  font-size: 1.15rem;
+  background-color: #6F4E37;
+  color: #D6B389;
+}
+
+.project-card-body-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  font-weight: bold;
+}
+
+.project-card-body-footer p {
+  background-color: #6F4E37;
+  color: whitesmoke;
+}
+
+.project-card-body-footer a {
+  font-weight: bold;
+  background-color: #6F4E37;
+  color: whitesmoke;
+}
+
+/* ===== GLOBAL STYLES ===== */
+* {
+  color: whitesmoke;
+}
+
+/* ===== MEDIA QUERIES ===== */
+
+/* Tablet Layout (2 columns) */
+@media (max-width: 960px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile Layout (1 column) */
+@media (max-width: 692px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}

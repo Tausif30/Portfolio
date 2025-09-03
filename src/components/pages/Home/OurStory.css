@@ -1,11 +1,11 @@
+/* ===== OUR STORY SECTION ===== */
 .our-story {
   gap: 3.5rem;
   margin-top: 12%;
   width: 50%;
 }
 
-
-.our-story-description{
+.our-story-description {
   border-radius: 10%;
 }
 
@@ -13,21 +13,27 @@
   padding: 1.5rem;
   background-color: #6F4E37;
   color: whitesmoke;
-  border-radius: 25px;
+  border-radius: 1.5625rem;
 }
-.our-story-description p span{
+
+.our-story-description p span {
   background-color: #6F4E37;
   color: #D6B389;
   font-size: xx-large;
 }
-/*-- Media queries ------------------------------------------------------*/
+
+/* ===== MEDIA QUERIES ===== */
+
+/* Tablet Layout */
 @media only screen and (max-width: 993px) {
-  .our-story{
+  .our-story {
     width: 65%;
   }
 }
+
+/* Mobile Layout */
 @media only screen and (max-width: 692px) {
-  .our-story{
+  .our-story {
     width: 80%;
   }
 }

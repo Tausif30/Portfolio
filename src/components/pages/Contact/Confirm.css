@@ -1,17 +1,21 @@
-.confirmed-booking{
-    align-self: center;
-    text-align: center;
+/* ===== CONFIRMATION PAGE STYLING ===== */
+.confirmed-booking {
+  align-self: center;
+  text-align: center;
 }
-.confirmed-booking h2{
-    color: #6F4E37;
+
+.confirmed-booking h2 {
+  color: #6F4E37;
 }
-.confirmed-booking p{
-    color: #6F4E37;
-    background-color: #e8d8c3;
-    font-size: x-large;
+
+.confirmed-booking p {
+  color: #6F4E37;
+  background-color: #E8D8C3;
+  font-size: x-large;
 }
-.confirmed-booking img{
-    max-width: 75px;
-    align-self: center;
-    margin-bottom: 2px;
+
+.confirmed-booking img {
+  max-width: 4.6875rem;
+  align-self: center;
+  margin-bottom: 0.125rem;
 }

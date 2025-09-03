@@ -1,10 +1,13 @@
-.button-primary{
-    min-width: fit-content;
+/* ===== CONTACT FORM STYLING ===== */
+.button-primary {
+  min-width: fit-content;
 }
-input{
-    outline: none !important;
+
+input {
+  outline: none !important;
 }
-textarea{
-    padding-top: 10px;
-    outline: none !important;
+
+textarea {
+  padding-top: 0.625rem;
+  outline: none !important;
 }

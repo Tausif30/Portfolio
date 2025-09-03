@@ -1,6 +1,7 @@
+/* ===== FOOTER CONTAINER ===== */
 .site-footer {
   background-color: #6F4E37;
-  color: whitesmoke
+  color: whitesmoke;
 }
 
 .site-footer .container {
@@ -9,6 +10,7 @@
   padding-bottom: 2.5rem;
   background-color: #6F4E37;
 }
+/* ===== FOOTER SECTIONS ===== */
 .site-footer-logo {
   grid-column: 1;
   min-width: 6rem;
@@ -26,15 +28,16 @@
 
 .site-footer a {
   color: whitesmoke;
-  transition: color 0.5s;
+  transition: color 0.5s ease;
   background-color: #6F4E37;
 }
 
-.site-footer a:hover, 
+.site-footer a:hover,
 .site-footer a:focus {
   color: #D6B389;
 }
 
+/* ===== NAVIGATION AND SOCIAL SECTIONS ===== */
 .site-footer-nav {
   grid-column: 2;
   background-color: #6F4E37;
@@ -62,58 +65,61 @@
   fill: whitesmoke !important;
 }
 
-/*-- Media queries ------------------------------------------------------*/
+/* ===== MEDIA QUERIES ===== */
 
+/* Large Tablet Layout */
 @media (max-width: 927px) {
-.site-footer .container {
-  grid-template-columns: repeat(3, auto);
-  grid-template-rows: auto auto;
+  .site-footer .container {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto auto;
+  }
+
+  .site-footer-social {
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 2rem;
+  }
 }
 
-.site-footer-social {
-  grid-column: 1;
-  grid-row: 2;
-  margin-top: 2rem;
-}
-}
-
+/* Small Tablet Layout */
 @media (max-width: 789px) {
-.site-footer .container {
-  grid-template-columns: auto auto;
+  .site-footer .container {
+    grid-template-columns: auto auto;
+  }
+
+  .site-footer-contact {
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 2rem;
+  }
+
+  .site-footer-social {
+    grid-column: 2;
+  }
 }
 
-.site-footer-contact {
-  grid-column: 1;
-  grid-row: 2;
-  margin-top: 2rem;
-}
-
-.site-footer-social {
-  grid-column: 2;
-}
-}
-
+/* Mobile Layout */
 @media (max-width: 576px) {
-.site-footer .container {
-  grid-template-columns: auto;
-}
+  .site-footer .container {
+    grid-template-columns: auto;
+  }
 
-.site-footer-logo {
-  grid-row: 1;
-}
+  .site-footer-logo {
+    grid-row: 1;
+  }
 
-.site-footer-nav {
-  grid-column: 1;
-  grid-row: 2;
-  margin-top: 2rem;
-}
+  .site-footer-nav {
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 2rem;
+  }
 
-.site-footer-contact {
-  grid-row: 3;
-}
+  .site-footer-contact {
+    grid-row: 3;
+  }
 
-.site-footer-social {
-  grid-column: 1;
-  grid-row: 4;
-}
+  .site-footer-social {
+    grid-column: 1;
+    grid-row: 4;
+  }
 }

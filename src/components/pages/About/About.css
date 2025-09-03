@@ -1,14 +1,18 @@
-.hobby, .skill, .achievement{
+/* ===== LAYOUT CONTAINERS ===== */
+.hobby,
+.skill,
+.achievement {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-row: auto;
   gap: 1.25rem;
   margin-left: 10%;
   margin-right: 10%;
-  width:auto;
+  width: auto;
 }
 
-.AboutMe{
+/* ===== ABOUT ME SECTION ===== */
+.AboutMe {
   margin-top: 0% !important;
   margin-left: 0% !important;
   margin-bottom: 0 !important;
@@ -19,73 +23,105 @@
   text-align: center;
   width: 100%;
 }
-.buttons{
+/* ===== NAVIGATION BUTTONS ===== */
+.buttons {
   display: flex;
   justify-content: center;
-  margin-top: 35px;
+  margin-top: 2.1875rem;
 }
-.buttons button{
+
+.buttons button {
   background-color: #6F4E37;
   color: #D6B389;
-  font-size:x-large;
-  padding: 10px 20px;
+  font-size: x-large;
+  padding: 0.625rem 1.25rem;
   align-items: center;
   cursor: pointer;
-  border: 3px solid #D6B389;
+  border: 0.1875rem solid #D6B389;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
-.buttons button:hover, .buttons button.active{
+
+.buttons button:hover,
+.buttons button.active {
   background-color: #D6B389;
   color: #6F4E37;
 }
+
 .buttons button:first-child {
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
-  border-right: 3px solid #D6B389;
+  border-top-left-radius: 1.5625rem;
+  border-bottom-left-radius: 1.5625rem;
+  border-right: 0.1875rem solid #D6B389;
 }
+
 .buttons button:nth-child(2) {
-  border-right: 3px solid #D6B389;
-  border-left: 0px;
+  border-right: 0.1875rem solid #D6B389;
+  border-left: 0;
 }
+
 .buttons button:nth-child(3) {
-  border-right: 3px solid #D6B389;
-  border-left: 0px;
+  border-right: 0.1875rem solid #D6B389;
+  border-left: 0;
 }
+
 .buttons button:last-child {
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
-  border-left: 0px;
+  border-top-right-radius: 1.5625rem;
+  border-bottom-right-radius: 1.5625rem;
+  border-left: 0;
 }
-.skill-link{
- color: whitesmoke !important;
+/* ===== TYPOGRAPHY ===== */
+.skill-link {
+  color: whitesmoke !important;
 }
-h2{
-  margin-bottom: 20px;
+
+h2 {
+  margin-bottom: 1.25rem;
 }
-.skill-card:nth-child(1){
+
+/* ===== GRID POSITIONING ===== */
+.skill-card:nth-child(1) {
   grid-column: 1;
   grid-row: 1;
 }
-.skill-card:nth-child(2){
+
+.skill-card:nth-child(2) {
   grid-column: 2;
   grid-row: 1;
 }
-.skill-card:nth-child(3){
+
+.skill-card:nth-child(3) {
   grid-column: 3;
   grid-row: 1;
 }
-.skill-card:nth-child(4){
+
+.skill-card:nth-child(4) {
   grid-column: 1;
   grid-row: 2;
 }
-.skill-card:nth-child(5){
+
+.skill-card:nth-child(5) {
   grid-column: 2;
   grid-row: 2;
 }
-.skill-card:nth-child(6){
+
+.skill-card:nth-child(6) {
   grid-column: 3;
   grid-row: 2;
 }
-.skill-header h2{
+/* ===== HEADER STYLING ===== */
+.skill-header {
+  margin-top: 3%;
+  margin-left: 12%;
+  grid-column: 1 / -1;
+}
+
+/* ===== HEADER STYLING ===== */
+.skill-header {
+  margin-top: 3%;
+  margin-left: 12%;
+  grid-column: 1 / -1;
+}
+
+.skill-header h2 {
   line-height: 1;
   font-family: "Markazi Text";
   font-weight: bold;
@@ -93,17 +129,16 @@ h2{
   color: #6F4E37;
   text-decoration: underline;
 }
-.skill-card-header h3{
+
+.skill-card-header h3 {
   color: #D6B389;
 }
-.skill-header {
-  margin-top: 3%;
-  margin-left: 12%;
-  grid-column: 1 / -1;
-}
-*{
+
+/* ===== GLOBAL STYLES ===== */
+* {
   color: whitesmoke;
 }
+/* ===== CARD STYLING ===== */
 .skill-card {
   grid-column: auto;
   grid-row: 2;
@@ -115,14 +150,18 @@ h2{
   border-radius: 1rem;
   overflow: hidden;
   background-color: #6F4E37;
+  transition: transform 0.3s ease;
 }
 
 .skill-card:hover .skill-card-image img {
   transform: scale(1.1);
 }
-img{
+
+/* ===== IMAGE STYLING ===== */
+img {
   margin-bottom: -2%;
 }
+
 .skill-card-image img {
   width: 100%;
   height: 12.5rem;
@@ -130,6 +169,7 @@ img{
   transition: all ease-in-out 0.3s;
 }
 
+/* ===== CARD CONTENT STYLING ===== */
 .skill-card-header,
 .skill-card-body-footer {
   padding-top: 1.25rem;
@@ -150,9 +190,10 @@ img{
   background-color: #6F4E37;
 }
 
-p{
-    background-color: #6F4E37;
+p {
+  background-color: #6F4E37;
 }
+
 .skill-card-body-footer {
   display: flex;
   flex-direction: column;
@@ -172,76 +213,98 @@ p{
   background-color: #6F4E37;
 }
 
-/*-- Media queries ------------------------------------------------------*/
+/* ===== MEDIA QUERIES ===== */
+
+/* Tablet Layout (2 columns) */
 @media (max-width: 960px) {
-  .hobby, .skill, .achievement{
+  .hobby,
+  .skill,
+  .achievement {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .skill-card {
     grid-row: auto;
   }
-  .skill-card:nth-child(1){
+
+  .skill-card:nth-child(1) {
     grid-column: 1;
     grid-row: 1;
   }
-  .skill-card:nth-child(2){
+
+  .skill-card:nth-child(2) {
     grid-column: 2;
     grid-row: 1;
   }
-  .skill-card:nth-child(3){
+
+  .skill-card:nth-child(3) {
     grid-column: 1;
     grid-row: 2;
   }
-  .skill-card:nth-child(4){
+
+  .skill-card:nth-child(4) {
     grid-column: 2;
     grid-row: 2;
   }
-  .skill-card:nth-child(5){
+
+  .skill-card:nth-child(5) {
     grid-column: 1;
     grid-row: 3;
   }
-  .skill-card:nth-child(6){
+
+  .skill-card:nth-child(6) {
     grid-column: 2;
     grid-row: 3;
   }
 }
 
+/* Mobile Layout (1 column) */
 @media (max-width: 692px) {
-  .hobby, .skill, .achievement {
+  .hobby,
+  .skill,
+  .achievement {
     grid-template-columns: 1fr;
   }
 
   .skill-header {
     grid-column: auto;
   }
-  .skill-card:nth-child(1){
+
+  .skill-card:nth-child(1) {
     grid-column: 1;
     grid-row: 1;
   }
-  .skill-card:nth-child(2){
+
+  .skill-card:nth-child(2) {
     grid-column: 1;
     grid-row: 2;
   }
-  .skill-card:nth-child(3){
+
+  .skill-card:nth-child(3) {
     grid-column: 1;
     grid-row: 3;
   }
-  .skill-card:nth-child(4){
+
+  .skill-card:nth-child(4) {
     grid-column: 1;
     grid-row: 4;
   }
-  .skill-card:nth-child(5){
+
+  .skill-card:nth-child(5) {
     grid-column: 1;
     grid-row: 5;
   }
-  .skill-card:nth-child(6){
+
+  .skill-card:nth-child(6) {
     grid-column: 1;
     grid-row: 6;
   }
-  .buttons button{
+
+  .buttons button {
     font-size: small;
   }
-  .buttons{
+
+  .buttons {
     margin-bottom: 3rem;
   }
 }
