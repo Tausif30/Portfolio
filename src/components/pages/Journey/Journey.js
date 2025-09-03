@@ -68,7 +68,16 @@ const Journey = () => {
                   <br />
                   Course: Environmental Science
                   <br />
-                  Study Level: Undergraduate (MEXT Scholar)
+                  Study Level: Undergraduate
+                  <br />
+                  Clubs: <a 
+                    className="journey-link" 
+                    href="https://utff.com/" 
+                    target="_blank" 
+                    rel="noreferrer"
+                  >
+                    Univeristy of Tokyo Formula Factory
+                  </a>
                 </p>
               </div>
             </article>
