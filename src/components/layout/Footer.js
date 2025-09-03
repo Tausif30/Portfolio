@@ -2,7 +2,8 @@ import {
   faFacebook,
   faTwitter,
   faInstagram,
-  faGithub
+  faGithub,
+  faLinkedin
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
@@ -58,6 +59,13 @@ const Footer = () => {
             rel="noreferrer" 
           >
             <FontAwesomeIcon icon={faGithub} size="lg" />
+          </a>
+          <a 
+            href="https://www.linkedin.com/in/tausif-ibne-iqbal-0232a937a/"
+            target="_blank"
+            rel="noreferrer" 
+          >
+            <FontAwesomeIcon icon={faLinkedin} size="lg" />
           </a>
         </div>
       </div>

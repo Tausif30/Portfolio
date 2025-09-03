@@ -157,10 +157,11 @@ const About = () => {
               </div>
               <div className="skill-card-body-footer">
                 <p>
-                  I can use all Microsoft Office tools and also a self-taught
-                  photoeditor and videoeditor. I can use Python, C#, SQL, JavaScript,
-                  and a bit of Machine Learning. I can use RStudio, MATLAB Simulink, and
-                  Linux (Bash).
+                  I can use all Microsoft Office tools. 
+                  A self-taught photoeditor and videoeditor. 
+                  Proficient in the languages Python, C#, SQL, JavaScript.
+                  Can also do a bit of Machine Learning. 
+                  I can use RStudio, MATLAB Simulink, and Linux (Bash).
                 </p>
               </div>
             </article>

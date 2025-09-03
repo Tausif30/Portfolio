@@ -16,6 +16,8 @@
   min-width: 6rem;
   width: 6rem;
   background-color: #6F4E37;
+  justify-self: start;
+  margin-left: 0;
 }
 
 .site-footer h4 {
