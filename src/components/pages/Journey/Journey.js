@@ -170,7 +170,7 @@ const Journey = () => {
                 <p>
                   Role: Teaching Assistant
                   <br />
-                  Timeline: 03/2024 - 06/2024
+                  Timeline: 01/2024 - 08/2024
                   <br />
                   Work: Make Questions for students, invigilating during exams and checking the scripts.
                 </p>
