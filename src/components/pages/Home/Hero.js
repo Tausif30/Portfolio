@@ -9,7 +9,7 @@ const Hero = () => {
         <div className="hero-information">
           <h1>Tausif Ibne Iqbal</h1>
           <p>
-            On a journey to becoming a better me and change the world.
+            A student and creator building solutions for a better world.
           </p>
           <a className="button-primary" href={pdf} download="resume.pdf">
             Download CV

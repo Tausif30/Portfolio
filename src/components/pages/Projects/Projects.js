@@ -4,6 +4,7 @@ import drone from './assets/Drone.png';
 import extension from './assets/Extension.png';
 import puzzleSolver from './assets/Puzzle_Solver.png';
 import rc from './assets/RC.png';
+import restaurant from './assets/webpage.png';
 import rgb from './assets/RGB.png';
 import vectorField from './assets/Vector_Field.png';
 import weather from './assets/Weather.jpg';
@@ -85,6 +86,20 @@ const Projects = () => {
             The speed of the car can be controlled from the app as well.
             Built another version where I control the car using Accelerometer making a Gesture Controlled Car.
             Also made a simple Obstacle Avoiding Car using Ultrasonic Sensor.
+            </p>
+          </div>
+        </article>
+        <article className="project-card">
+          <div className="project-card-image">
+            <img src={restaurant} alt="Restaurant Website Project" />
+          </div>
+          <div className="project-card-header">
+            <h3>Restaurant Website Prototype</h3>
+          </div>
+          <div className="project-card-body-footer">
+            <p>
+              A Prototype website for a restaurant  built using React.js.
+              It features a menu display and reservation booking functionality.
             </p>
           </div>
         </article>

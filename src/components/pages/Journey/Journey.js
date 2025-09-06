@@ -172,7 +172,7 @@ const Journey = () => {
                   <br />
                   Timeline: 01/2024 - 08/2024
                   <br />
-                  Work: Make Questions for students, invigilating during exams and checking the scripts.
+                  Work: Developing Exam Questions for students, Invigilating during exams and Grading the scripts.
                 </p>
               </div>
             </article>
