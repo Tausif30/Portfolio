@@ -3,6 +3,8 @@ import ut from './assets/ut.png';
 import bit from './assets/bit.jpg';
 import utokyo from './assets/utokyo.jpg';
 import cs50 from './assets/cs50.png';
+import cawk from './assets/cawk.jpg';
+import utokyo_logo from './assets/utokyo.png';
 import './Journey.css';
 
 const Journey = () => {
@@ -173,6 +175,58 @@ const Journey = () => {
                   Timeline: 01/2024 - 08/2024
                   <br />
                   Work: Developing Exam Questions for students, Invigilating during exams and Grading the scripts.
+                </p>
+              </div>
+            </article>
+            <article className="Journey-card">
+              <div className="Journey-card-image">
+                <img src={cawk} alt="UT" />
+              </div>
+              <div className="Journey-card-header">
+                <h3>CAWK</h3>
+              </div>
+              <div className="Journey-card-body-footer">
+                <p>
+                  <a 
+                    className="journey-link" 
+                    href="https://park.itc.u-tokyo.ac.jp/cawk/en/" 
+                    target="_blank" 
+                    rel="noreferrer"
+                  >
+                    🔗 Website
+                  </a>
+                  <br />
+                  Role: English Tutor
+                  <br />
+                  Timeline: 10/2025 - Present
+                  <br />
+                  Work: Helping Local Japanese Students improve their English skills.
+                </p>
+              </div>
+            </article>
+            <article className="Journey-card">
+              <div className="Journey-card-image">
+                <img src={utokyo_logo} alt="UT" />
+              </div>
+              <div className="Journey-card-header">
+                <h3>Lab Internship</h3>
+              </div>
+              <div className="Journey-card-body-footer">
+                <p>
+                  <a 
+                    className="journey-link" 
+                    href="https://scale.t.u-tokyo.ac.jp/" 
+                    target="_blank" 
+                    rel="noreferrer"
+                  >
+                    🔗 Website
+                  </a>
+                  <br />
+                  Role: Lab Intern
+                  <br />
+                  Timeline: 10/2025 - Present
+                  <br />
+                  Lab Internship at the Delaunauy Lab at the faculty of Mechanical Engineering, University of Tokyo. Working on different projects.
                 </p>
               </div>
             </article>

@@ -27,12 +27,6 @@ const About = () => {
           All
         </button>
         <button 
-          className={view === 'Hobbies' ? 'active' : ''} 
-          onClick={() => setView('Hobbies')}
-        >
-          Hobbies
-        </button>
-        <button 
           className={view === 'Skills' ? 'active' : ''} 
           onClick={() => setView('Skills')}
         >
@@ -44,90 +38,15 @@ const About = () => {
         >
           Achievements
         </button>
+        <button 
+          className={view === 'Hobbies' ? 'active' : ''} 
+          onClick={() => setView('Hobbies')}
+        >
+          Hobbies
+        </button>
       </div>
       <div className="skill-header">
       </div>
-      {(view === 'All' || view === 'Hobbies') && (
-        <>
-          <div className="skill-header">
-            <h2>Hobbies</h2>
-          </div>
-          <section className="hobby">
-            <article className="skill-card">
-              <div className="skill-card-image">
-                <img src={travel} alt="River going through mountains." />
-              </div>
-              <div className="skill-card-header">
-                <h3>Travel</h3>
-              </div>
-              <div className="skill-card-body-footer">
-                <p>
-                  I love to travel and learn about new cultures, visit new places and learn about the people.
-                </p>
-              </div>
-            </article>
-            <article className="skill-card">
-              <div className="skill-card-image">
-                <img src={anime} alt="86 Anime" />
-              </div>
-              <div className="skill-card-header">
-                <h3>Anime/Movie</h3>
-              </div>
-              <div className="skill-card-body-footer">
-                <p>
-                  Love to binge watch animes and movies.
-                  <br />
-                  Like to read Manga, Novels and Japanese Light Novels.
-                  <br />
-                  Also love to listen music.
-                </p>
-              </div>
-            </article>
-            <article className="skill-card">
-              <div className="skill-card-image">
-                <img src={science} alt="Physics" />
-              </div>
-              <div className="skill-card-header">
-                <h3>Science</h3>
-              </div>
-              <div className="skill-card-body-footer">
-                <p>
-                  I love to learn new things in the field of science especially Physics.
-                  Also love to run experiments and build stuffs.
-                </p>
-              </div>
-            </article>
-            <article className="skill-card">
-              <div className="skill-card-image">
-                <img src={food} alt="food" />
-              </div>
-              <div className="skill-card-header">
-                <h3>Foodie</h3>
-              </div>
-              <div className="skill-card-body-footer">
-                <p>
-                 I love to cook and eat new tasty foods.
-                 I can cook South Asian, Italian and bit of Japanese Cuisines.
-                 I love to experiment and make new dishes.
-                </p>
-              </div>
-            </article>
-            <article className="skill-card">
-              <div className="skill-card-image">
-                <img src={workout} alt="Workout" />
-              </div>
-              <div className="skill-card-header">
-                <h3>Workout</h3>
-              </div>
-              <div className="skill-card-body-footer">
-                <p>
-                  I like to do gym and maintain a healthy body.
-                </p>
-              </div>
-            </article>
-          </section>
-        </>
-      )}
       {(view === 'All' || view === 'Skills') && (
         <>
           <div className="skill-header">
@@ -246,6 +165,87 @@ const About = () => {
               <div className="skill-card-body-footer">
                 <p>
                   Gold Awardee in the Duke of Edinburgh Program.
+                </p>
+              </div>
+            </article>
+          </section>
+        </>
+      )}
+      {(view === 'All' || view === 'Hobbies') && (
+        <>
+          <div className="skill-header">
+            <h2>Hobbies</h2>
+          </div>
+          <section className="hobby">
+            <article className="skill-card">
+              <div className="skill-card-image">
+                <img src={travel} alt="River going through mountains." />
+              </div>
+              <div className="skill-card-header">
+                <h3>Travel</h3>
+              </div>
+              <div className="skill-card-body-footer">
+                <p>
+                  I love to travel and learn about new cultures, visit new places and learn about the people.
+                </p>
+              </div>
+            </article>
+            <article className="skill-card">
+              <div className="skill-card-image">
+                <img src={anime} alt="86 Anime" />
+              </div>
+              <div className="skill-card-header">
+                <h3>Anime/Movie</h3>
+              </div>
+              <div className="skill-card-body-footer">
+                <p>
+                  Love to binge watch animes and movies.
+                  <br />
+                  Like to read Manga, Novels and Japanese Light Novels.
+                  <br />
+                  Also love to listen music.
+                </p>
+              </div>
+            </article>
+            <article className="skill-card">
+              <div className="skill-card-image">
+                <img src={science} alt="Physics" />
+              </div>
+              <div className="skill-card-header">
+                <h3>Science</h3>
+              </div>
+              <div className="skill-card-body-footer">
+                <p>
+                  I love to learn new things in the field of science especially Physics.
+                  Also love to run experiments and build stuffs.
+                </p>
+              </div>
+            </article>
+            <article className="skill-card">
+              <div className="skill-card-image">
+                <img src={food} alt="food" />
+              </div>
+              <div className="skill-card-header">
+                <h3>Foodie</h3>
+              </div>
+              <div className="skill-card-body-footer">
+                <p>
+                 I love to cook and eat new tasty foods.
+                 I can cook South Asian, Italian and bit of Japanese Cuisines.
+                 I love to experiment and make new dishes.
+                </p>
+              </div>
+            </article>
+            <article className="skill-card">
+              <div className="skill-card-image">
+                <img src={workout} alt="Workout" />
+              </div>
+              <div className="skill-card-header">
+                <h3>Workout</h3>
+              </div>
+              <div className="skill-card-body-footer">
+                <p>
+                  I like to do gym and maintain a healthy body.
                 </p>
               </div>
             </article>
