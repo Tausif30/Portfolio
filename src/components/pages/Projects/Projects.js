@@ -8,6 +8,8 @@ import restaurant from './assets/webpage.png';
 import rgb from './assets/RGB.png';
 import vectorField from './assets/Vector_Field.png';
 import weather from './assets/Weather.jpg';
+import kami from './assets/Kami_Translator.png';
+import hub from './assets/Hub_Spoke.svg';
 import './Projects.css';
 
 const Projects = () => {
@@ -91,6 +93,23 @@ const Projects = () => {
         </article>
         <article className="project-card">
           <div className="project-card-image">
+            <img src={hub} alt="Hub and Spoke Project" style={{backgroundColor: '#ffffff'}}
+            />
+          </div>
+          <div className="project-card-header">
+            <h3>Hub and Spoke Network</h3>
+          </div>
+          <div className="project-card-body-footer">
+            <p>
+            This project implements a secure, scalable Hub-and-Spoke network topology in Azure. 
+            The design uses a central "Hub" Virtual Network (VNet) to consolidate shared services, 
+            while "Spoke" VNets host isolated workloads (Production and Non-Production).
+            The entire infrastructure is deployed using Bash scripts.
+            </p>
+          </div>
+        </article>
+        <article className="project-card">
+          <div className="project-card-image">
             <img src={restaurant} alt="Restaurant Website Project" />
           </div>
           <div className="project-card-header">
@@ -115,6 +134,20 @@ const Projects = () => {
               A productivity-focused browser extension. A simple dictionary to look up word definitions.
               Built using Merriam Webster's API. Selecting a word on any webpage can automatically display its definition.
             </p>
+          </div>
+        </article>
+        <article className="project-card">
+          <div className="project-card-image">
+            <img src={kami} alt="Kami Translator Project" />
+          </div>
+          <div className="project-card-header">
+            <h3>Translator Extension</h3>
+          </div>
+          <div className="project-card-body-footer">
+            <p>
+              A productivity-focused browser extension. A simple Translator Extension.
+              Capable of translating selected text on any webpage into a different language using Azure Translate API.
+              </p>
           </div>
         </article>
         <article className="project-card">
