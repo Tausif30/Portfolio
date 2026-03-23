@@ -1,6 +1,5 @@
 import {
   faFacebook,
-  faTwitter,
   faInstagram,
   faGithub,
   faLinkedin
@@ -11,10 +10,6 @@ import './Footer.css';
 import logoWhiteImage from './assets/logo.png';
 import pages from '../../utils/pages';
 
-const socials = [
-  { icon: faFacebook, name: 'facebook', },
-  { icon: faInstagram, name: 'instagram', },
-];
 
 const navLinks = Array.from(pages.values()).filter(page => page.anchorable);
 
