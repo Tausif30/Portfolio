@@ -9,6 +9,8 @@ import rgb from './assets/RGB.png';
 import vectorField from './assets/Vector_Field.png';
 import weather from './assets/Weather.jpg';
 import kami from './assets/Kami_Translator.png';
+import circuits from './assets/Circuits.png';
+import tokyo_cool_route from './assets/Tokyo_Cool_Route.png';
 import hub from './assets/Hub_Spoke.svg';
 import './Projects.css';
 
@@ -17,6 +19,31 @@ const Projects = () => {
     <>
       <h2 className="ProjectsMe">Projects</h2>
       <section className="projects">
+        <article className="project-card">
+          <div className="project-card-image">
+            <img src={tokyo_cool_route} alt="Weather Station Project" />
+          </div>
+          <div className="project-card-header">
+            <h3>Tokyo Cool Route</h3>
+          </div>
+          <div className="project-card-body-footer">
+            <p>
+            <a className="journey-link" href="https://www.youtube.com/watch?v=dZ1RwW_-Xc4" target="_blank" rel="noreferrer">
+              🎥 Video Demo
+            </a>  
+            <br/>
+            <a className="journey-link" href="https://github.com/Tausif30/Tokyo_Map_Cool_Route" target="_blank" rel="noreferrer">
+              🔗 Github Repo
+            </a>
+            </p>
+            <p>
+            Tokyo Cool Route is a Web Application built for People who walks a lot in Tokyo during Summer.
+            It helps find nearby cooling spots where people can take a break and cool down.
+            It also helps find the coolest route to walk from one place to another by finding the coolest route possible.
+            The data was provided by the Tokyo Metropolitan Government for the Tokyo Open Data Hackathon 2026.
+            </p>
+          </div>
+        </article>
         <article className="project-card">
           <div className="project-card-image">
             <img src={weather} alt="Weather Station Project" />
@@ -31,7 +58,7 @@ const Projects = () => {
             </a>
             </p>
             <p>
-              My own AI Weather Forecaster built from scratch.
+              AI Weather Forecaster built from scratch.
               Used RNN LSTM model to build a Neural Network.
               Trained it with 3 years of data from Tokyo and Dhaka
               to predict weather for the next 24 hours.
@@ -55,6 +82,26 @@ const Projects = () => {
             <p>
               Custom-built quadcopter with Arduino. Used YMFC-AL software package for flight control and navigation. 
               The drone is capable of basic flight and can be controlled remotely.
+            </p>
+          </div>
+        </article>
+        <article className="project-card">
+          <div className="project-card-image">
+            <img src={circuits} alt="Weather Station Project" />
+          </div>
+          <div className="project-card-header">
+            <h3>Analogue Circuit Design</h3>
+          </div>
+          <div className="project-card-body-footer">
+            <p>
+            <a className="journey-link" href="https://github.com/Tausif30/Circuit-Simulation" target="_blank" rel="noreferrer">
+              🔗 Github Repo
+            </a>
+            </p>
+            <p>
+                Analogue Circuit Simulations designed in SPICE Software.
+                It contains basic circuits like Amplifiers, Oscillators to 
+                complicated circuits like Switched Mode Power Supplies and Inverters.
             </p>
           </div>
         </article>

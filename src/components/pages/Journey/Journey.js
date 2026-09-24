@@ -5,6 +5,7 @@ import utokyo from './assets/utokyo.jpg';
 import cs50 from './assets/cs50.png';
 import cawk from './assets/cawk.jpg';
 import utokyo_logo from './assets/utokyo.png';
+import researchin from './assets/ResearchIn.png';
 import './Journey.css';
 
 const Journey = () => {
@@ -78,7 +79,7 @@ const Journey = () => {
                     target="_blank" 
                     rel="noreferrer"
                   >
-                    Univeristy of Tokyo Formula Factory
+                    Univeristy of Tokyo Formula Factory (11/2024-07/2025)
                   </a>
                 </p>
               </div>
@@ -114,8 +115,8 @@ const Journey = () => {
                   <br />
                   Course: CS50x
                   <br />
-                  Description: A 3 month course covering topics
-                  from C, Python, SQL, Web Development, AI & Cybersecurity.
+                  Description: A 3 online month course covering topics
+                  from C, Python, SQL, Web Development.
                 </p>
               </div>
             </article>
@@ -224,9 +225,35 @@ const Journey = () => {
                   <br />
                   Role: Lab Intern
                   <br />
-                  Timeline: 10/2025 - Present
+                  Timeline: 10/2025 - 09/2026
                   <br />
                   Lab Internship at the Delaunauy Lab at the faculty of Mechanical Engineering, University of Tokyo. Working on different projects.
+                </p>
+              </div>
+            </article>
+            <article className="Journey-card">
+              <div className="Journey-card-image">
+                <img src={researchin} alt="ResearchIn" />
+              </div>
+              <div className="Journey-card-header">
+                <h3>ResearchIn</h3>
+              </div>
+              <div className="Journey-card-body-footer">
+                <p>
+                  <a 
+                    className="journey-link" 
+                    href="https://corp.jobresearchin.com/" 
+                    target="_blank" 
+                    rel="noreferrer"
+                  >
+                    🔗 Website
+                  </a>
+                  <br />
+                  Role: Chief Technical Officer (CTO)
+                  <br />
+                  Timeline: 06/2026 - Present
+                  <br />
+                  ResearchIn is a platform that connects students with research opportunities. As the CTO, I am responsible for overseeing the technical aspects of the platform, including development, maintenance, and security.
                 </p>
               </div>
             </article>
