@@ -36,6 +36,7 @@ const Projects = () => {
             <a className="journey-link" href="https://github.com/Tausif30/SLAM_Robot" target="_blank" rel="noreferrer">
               🔗 Github Repo
             </a>
+            <br/>
             <a className="journey-link" href="https://github.com/Tausif30/SLAM_Robot/blob/main/Report.pdf" target="_blank" rel="noreferrer">
               📘 Project Report
             </a>            
