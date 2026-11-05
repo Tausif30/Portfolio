@@ -12,6 +12,7 @@ import kami from './assets/Kami_Translator.png';
 import circuits from './assets/Circuits.png';
 import tokyo_cool_route from './assets/Tokyo_Cool_Route.png';
 import hub from './assets/Hub_Spoke.svg';
+import gazebo from './assets/Gazebo_World.png';
 import './Projects.css';
 
 const Projects = () => {
@@ -21,7 +22,33 @@ const Projects = () => {
       <section className="projects">
         <article className="project-card">
           <div className="project-card-image">
-            <img src={tokyo_cool_route} alt="Weather Station Project" />
+            <img src={gazebo} alt="Gazebo World SLAM Robot" />
+          </div>
+          <div className="project-card-header">
+            <h3>SLAM Robot</h3>
+          </div>
+          <div className="project-card-body-footer">
+            <p>
+            <a className="journey-link" href="https://www.youtube.com/watch?v=H_Hdni-R6KY" target="_blank" rel="noreferrer">
+              🎥 Video Demo
+            </a>  
+            <br/>
+            <a className="journey-link" href="https://github.com/Tausif30/SLAM_Robot" target="_blank" rel="noreferrer">
+              🔗 Github Repo
+            </a>
+            <a className="journey-link" href="https://github.com/Tausif30/SLAM_Robot/blob/main/Report.pdf" target="_blank" rel="noreferrer">
+              📘 Project Report
+            </a>            
+            </p>
+            <p>
+              A ROS 2 (Humble) and Gazebo simulation in which a mobile robot maps an unknown environment with SLAM, 
+              recognizes a target object with a fine tuned AI Model (YOLO-26)
+            </p>
+          </div>
+        </article>
+        <article className="project-card">
+          <div className="project-card-image">
+            <img src={tokyo_cool_route} alt="Tokyo Cool Route" />
           </div>
           <div className="project-card-header">
             <h3>Tokyo Cool Route</h3>
